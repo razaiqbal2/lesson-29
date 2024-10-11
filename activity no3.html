@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Promises in JS</h2>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        async function add(a, b) {
+            let sum = await a + b;
+            display(sum);
+        }
+        function display(some) {
+            document.getElementById("p1").innerHTML = some;
+        }
+        let mypromise=new Promise(function(myResolve,myReject){
+            let x=1
+            if(x==0)[
+                myResolve("ok")
+            ]
+            else{
+                myReject("Error")
+            }
+        });
+        mypromise.then(
+            function(value){add(10,20)},
+            function(error) { add(error)}
+        )
+        </script>
+</body>
+</html>
